@@ -1,0 +1,25 @@
+{
+  "name": "create-tjss",
+  "version": "1.0.4a",
+  "description": "Three.js Shader Sandbox template",
+  "type": "module",
+  "bin": {
+    "create-tjss": "./create.js"
+  },
+  "files": [
+    "create.js",
+    "template"
+  ],
+  "keywords": [
+    "threejs",
+    "glsl",
+    "shader",
+    "template",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dzhonnn/create-tjss.git"
+  }
+}
