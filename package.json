@@ -1,6 +1,6 @@
 {
   "name": "create-tjss",
-  "version": "1.0.5c",
+  "version": "1.0.6",
   "description": "Three.js Shader Sandbox template",
   "type": "module",
   "bin": {
