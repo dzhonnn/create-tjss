@@ -8,7 +8,7 @@ import readline from 'readline'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const projectName = process.env[2] || (await askForProjectName())
+const projectName = process.argv[2] || (await askForProjectName())
 const templateDir = path.resolve(__dirname, 'template')
 const targetDir = path.resolve(process.cwd(), projectName)
 
