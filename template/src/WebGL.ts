@@ -112,4 +112,14 @@ export default class WebGL {
     const orbit = new OrbitControls(this.camera, this.renderer.domElement)
     orbit.update()
   }
+
+  createEnvironmentEquirectangular(url: string, background: boolean | undefined) {
+    const texture = new THREE.TextureLoader().load(url)
+    texture.mapping = THREE.EquirectangularReflectionMapping
+    this.scene.environment = texture
+
+    if (background) {
+      this.scene.background = texture
+    }
+  }
 }
