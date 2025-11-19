@@ -24,7 +24,11 @@ const planeMaterial = new THREE.ShaderMaterial({
 const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
 scene.add(planeMesh)
 
+const clock = new THREE.Clock()
+
 function animate() {
+  uniforms.uTime.value = clock.getElapsedTime()
+
   renderer.render(scene, camera)
 }
 
